@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    /* padding: 20px; */
+}
+nav{
+    background: rgb(230, 18, 18);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+nav h2 span{
+    color: white;
+}
+nav .list{
+    list-style-type: none;
+}
+nav .list .list-item{
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+.list .list-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.list-item a:hover{
+    color: black;
+}
+nav .social-media{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.social-media i{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer; 
+}
+.social-media i.fa-linkedin-in:hover{    
+    color: #0077B5;   
+}
+.social-media i.fa-github:hover{
+    color: #24292E;
+}
+.social-media i.fa-instagram:hover{
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.social-media i.fa-x-twitter:hover{
+    color: #1DA1F2;
+}
+
+.main,.about-section,.myService{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background:rgb(230, 18, 18) ; 
+    color: white;   
+}
+.box1 h3{
+    font-size: 25px;
+}
+.box1 h1{
+    color: black;
+    font-size: 45px;
+}
+.box1 h2{
+    margin: 0 0 18px 0;
+}
+.box1 h2 span{
+    color: black;
+}
+.main .box2 img{
+    width: 350px;
+    background: white;
+    border-radius: 50%;
+}
+.main-btn{
+   
+    width: 350px;
+    padding: 5px;
+}
+.main-btn button{
+    border: none;
+    width: 150px;
+    margin: 3px 5px;
+    font-size: 15px;
+    background: none;
+    border-radius: 40px;
+    font-weight: 600;
+    padding: 15px;
+    cursor: pointer;
+}
+.main-btn button.downloadCV{
+    background-color: rgb(255, 255, 0);
+    color: rgb(230, 18, 18);
+}
+.main-btn button.talk{
+    border: 2px solid rgb(255, 255, 0);
+    color: rgb(255, 255, 0);
+}
+.about-section{
+    background:rgb(228, 51, 51) ;
+}
+.about-section .about-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img{
+    width: 400px;
+}
+.about-me{
+    width: 50%;
+}
+.about-me h1,.myService h1{
+    margin: 5px 0 15px 0;
+    font-size: 45px;
+}
+.about-me span, .myService h1 span{
+    color: black;
+}
+.about-me p{
+    font-size: 18px;
+}
+.myService{
+    flex-direction: column;
+    padding: 30px 0 50px 0;
+}
+.myService .service{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.service div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(228, 51, 51);
+    height: 340px;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+.service div i{
+    font-size: 40px;
+    color: black;
+}
+.service div h3{
+    color: rgb(70, 24, 24);
+}
+.service div ul{
+    text-align: left;
+}
+.service div ul{
+    list-style-type: none;
+}
+.mySkill{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background:  rgb(228, 51, 51);
+
+}
+.mySkill .skill1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.skill1 h1, 
+.mywork h1,
+.contact  h1{
+    font-size: 45px;
+    color: white;
+    margin: 0 0 50px 0;
+}
+.skill1 h1 span,
+.mywork h1 span,
+.contact h1 span{
+    color: black;
+}
+.skill1 .skill-icon .icon img{
+    padding: 10px;
+    border-radius: 50%;
+    background: white;
+    width: 80px;
+    margin: 10px;
+}
+.mySkill .skill2{
+    width: 100%;
+    
+}
+.mySkill .skill2 img{
+    width: 500px;
+}
+.mywork{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0 100px 0;
+    align-items: center;
+    justify-content: center;
+    background:  rgb(230, 18, 18);
+}
+.mywork .workbox{
+    display:flex;
+    gap: 20px;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+.workbox .img-box{
+    width: 250px;
+    display: flex;
+    border-radius: 8px;
+    /* gap: 20px; */
+    height: 180px;
+    background: white;
+    border: 2px solid black;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 100px 0;
+    align-items: center;
+    justify-content: space-evenly;
+    background:  rgb(228, 51, 51);
+}
+.contact  .cont-box{
+    display: flex;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cont-box .contbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.contbox i{
+    font-size: 35px;
+    color: black;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0 50px 0;
+    align-items: center;
+    font-size: 20px;
+    justify-content: space-evenly;
+    background:  rgb(230, 18, 18);
+}
+.footer .foot:nth-child(2) ,.anger{
+    width: 300px;
+    text-decoration: none;
+    font-size: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    cursor: pointer;
+}
+.footer .foot{
+    color: white;
+}
+.foot span{
+    color: black;
+}
+.workbox .box1{
+    background: url("./assets/web1.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.workbox .box2{
+    background: url("./assets/web2.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.workbox .box3{
+    background: url("./assets/web3.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.workbox .box4{
+    background: url("./assets/web4.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.workbox .box5{
+    background: url("./assets/web5.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.workbox .box6{
+    background: url("./assets/web6.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.workbox .box7{
+    background: url("./assets/web7.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.workbox .box8{
+    background: url("./assets/web8.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
